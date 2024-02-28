@@ -1,0 +1,61 @@
+# Ignorar archivos y directorios generados por el sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ignorar archivos de respaldo y temporales
+*~
+*.swp
+*.bak
+*.tmp
+
+# Ignorar archivos log y registros
+*.log
+log/
+logs/
+
+# Ignorar directorios y archivos específicos
+node_modules/
+build/
+dist/
+vendor/
+
+# Ignorar archivos de configuración de IDE y editores de texto
+.idea/
+.vscode/
+
+# Ignorar archivos de configuración específicos del sistema
+.env
+.env.local
+.env.*.local
+
+# Ignorar archivos de dependencias
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Ignorar archivos de compilación y resultados de prueba
+*.pid
+*.seed
+*.pid.lock
+*.log
+*.pot
+*.out
+
+# Ignorar archivos de configuración para herramientas específicas
+.eslintcache
+*.tern-port
+
+# Ignorar archivos de configuración de sistema
+Desktop.ini
+Thumbs.db
+
+# Ignorar archivos de respaldo para Windows
+$RECYCLE.BIN/
+ehthumbs.db
+
+# Ignorar archivos de respaldo para macOS
+.Spotlight-V100/
+.Trashes
+
+# Ignorar archivos de respaldo para Linux
+lost+found/
