@@ -3,9 +3,9 @@ import { DataSource } from "typeorm";
 import dotenv from 'dotenv';
 
 import { loadCredentials } from "./enviroment";
-import { User } from "../modules/users/models/user.model";
-import { Customer } from "../modules/customers/models/customer.model";
-import { Contact } from "../modules/contacts/models/contact.model";
+import { User } from "../models/user.model";
+import { Customer } from "../models/customer.model";
+import { Contact } from "../models/contact.model";
 
 dotenv.config();
 

@@ -1,8 +1,8 @@
 import cors from 'cors';
 import dotenv from 'dotenv';
 import express from 'express';
-import { loadModules } from './modules';
-import { ErrorMiddleware, NotFoundMiddleware } from './modules/shared/middlewares/error.middleware';
+import { loadModules } from '.';
+import { ErrorMiddleware, NotFoundMiddleware } from './shared/middlewares/error.middleware';
 
 dotenv.config();
 
