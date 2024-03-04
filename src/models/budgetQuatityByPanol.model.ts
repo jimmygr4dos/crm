@@ -1,25 +1,37 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity({ name: 'contacts' })
-export class Contact {
+@Entity({ name: 'budgetQuantityByPanols' })
+export class BudgetQuantityByPanol {
 
   @PrimaryGeneratedColumn()
   id: number;
 
   @Column()
-  firstName: string;
+  description: string;
 
   @Column()
-  lastName: string;
+  quantity: number;
 
   @Column()
-  personalEmail: string;
+  panol: number;
 
   @Column()
-  businessEmail: string;
+  quantityByPanol: number;
+
+  @Column()
+  excess: number;
+
+  @Column()
+  subtotal: number;
+
+  @Column()
+  cut: number;
+
+  @Column()
+  total: number;
 
   @Column({ nullable: false })
-  customerId: number;
+  budgetId: number;
 
   @Column({ type: 'datetime', default: () => 'CURRENT_TIMESTAMP' })
   createdAt: Date
