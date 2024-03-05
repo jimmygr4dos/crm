@@ -7,11 +7,17 @@ export interface IContact {
   id: number;
   firstName: string;
   lastName: string;
+  personalPhone: number;
+  businessPhone: number;
   personalEmail: string;
   businessEmail: string;
+  observation: string;
   customerId: number;
+  status: number;
   createdAt: Date;
-  createdBy: string;
+  createdBy: number | null;
+  modifiedAt: Date | null; 
+  modifiedBy: number | null;
 }
 
 export interface IContactRepository extends IRepository<Contact> {

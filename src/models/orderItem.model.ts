@@ -34,5 +34,12 @@ export class OrderItem {
   createdAt: Date
 
   @Column({ nullable: true })
-  createdBy: string
+  createdBy: number
+
+  @Column({ nullable: true })
+  modifiedAt: Date
+
+  @Column({ nullable: true })
+  modifiedBy: number
+
 }

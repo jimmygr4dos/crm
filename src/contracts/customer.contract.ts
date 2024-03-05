@@ -8,8 +8,11 @@ export interface ICustomer {
   tinNumber: string;
   companyName: string;
   address: string;
+  status: number;
   createdAt: Date;
-  createdBy: string;
+  createdBy: number | null;
+  modifiedAt: Date | null; 
+  modifiedBy: number | null;
 }
 
 export interface ICustomerRepository extends IRepository<Customer> {

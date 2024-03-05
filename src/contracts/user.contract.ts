@@ -8,7 +8,9 @@ export interface IUser {
   username: string;
   password: string;
   createdAt: Date;
-  authStrategy: string;
+  createdBy: number;
+  modifiedAt: Date;
+  modifiedBy: number;
 }
 
 export interface IUserRepository extends IRepository<User> {

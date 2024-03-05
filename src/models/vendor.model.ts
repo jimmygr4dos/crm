@@ -1,7 +1,7 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity({ name: 'contacts' })
-export class Contact {
+@Entity({ name: 'vendors' })
+export class Vendor {
 
   @PrimaryGeneratedColumn()
   id: number;
@@ -23,12 +23,18 @@ export class Contact {
 
   @Column()
   businessEmail: string;
+  
+  @Column()
+  commissionPercentage: number;
+  
+  @Column()
+  currencyTypeId: number;
+  
+  @Column()
+  salesQuota: number;
 
   @Column()
   observation: string;
-
-  @Column({ nullable: false })
-  customerId: number;
 
   @Column()
   status: number;
@@ -44,4 +50,5 @@ export class Contact {
 
   @Column({ nullable: true })
   modifiedBy: number
+
 }

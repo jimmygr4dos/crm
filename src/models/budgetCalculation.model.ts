@@ -1,7 +1,7 @@
 import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
 
-@Entity({ name: 'budgetQuantityByPanols' })
-export class BudgetQuantityByPanol {
+@Entity({ name: 'budgetCalculations' })
+export class BudgetCalculation {
 
   @PrimaryGeneratedColumn()
   id: number;
@@ -37,5 +37,12 @@ export class BudgetQuantityByPanol {
   createdAt: Date
 
   @Column({ nullable: true })
-  createdBy: string
+  createdBy: number
+
+  @Column({ nullable: true })
+  modifiedAt: Date
+
+  @Column({ nullable: true })
+  modifiedBy: number
+  
 }
